@@ -4,6 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
+        /* width 
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track 
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 15px 0 0px #cec7d4;
+            border-radius: 10px;
+        }
+
+        /* Handle 
+        ::-webkit-scrollbar-thumb {
+            background: #868585;
+            border-radius: 10px;
+        }
+
+            /* Handle on hover 
+            ::-webkit-scrollbar-thumb:hover {
+                background: #342f2f;
+            }
+        */
+
         body {
             margin: 0;
             font-family: Oxanium, Times, serif, Helvetica, sans-serif;
@@ -29,6 +53,11 @@
                     background-color: #d1e6e8;
                     color: #3c3d58;
                 }
+
+            /*    .topnav a.active {
+                    background-color: #c6b7be;
+                    color: #e9efec;
+                }*/
 
             .topnav .icon {
                 display: none;
@@ -62,6 +91,32 @@
                     text-align: left;
                 }
         }
+
+        /*card*/
+        .card {
+            display: inline-block;
+            position: relative;
+            margin: 50px;
+
+        }
+
+
+            .card .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+
+            .card:hover .img-top {
+                display: inline;
+                box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+            }
+
+        
+        
+
     </style>
 </head>
 <body style="background-color: #3c3d58; ">
@@ -80,6 +135,20 @@
         <h1 style="color: #d1e6e8; ">Toby Hooper</h1>
         <p style="color: #d1e6e8; ">I make games</p>
     </div>
+
+    <a href="https://sites.google.com/view/toby-hooper/glowing-ghost">
+        <div class="card">
+            <img src="GlowingGhostIcon.png" alt="Card Back">
+            <img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
+        </div>
+    </a>
+
+    <a href="https://sites.google.com/view/toby-hooper/glowing-ghost">
+        <div class="card">
+            <img src="GlowingGhostIcon.png" alt="Card Back">
+            <img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front" >
+        </div>
+    </a>
 
     <script>
         function myFunction() {
