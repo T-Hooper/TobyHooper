@@ -1,160 +1,220 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Oxanium, Times, serif, Helvetica, sans-serif;
-        }
+    .container {
+        position: relative;
+        width: 50%;
+        max-width: 600px;
+    }
 
-        .topnav {
-            overflow: hidden;
-			background-color: rgba(175, 151, 183, 0.82);
-			position: sticky;
-			top: 0;
-			width: 100%;
-		    z-index: 100;
-        }
+    .image {
+        opacity: 1;
+        display: block;
+        width: 200%;
+        height: auto;
+        transition: .4s ease;
+        backface-visibility: hidden;
+        padding: 8px;
+        margin-right: 10px;
+    }
 
-            .topnav a {
-                float: left;
-				display: block;
-				color: #3c3d58;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 17px;
-				font-weight: 400;
-            }
+    .image2 {
+        opacity: 1;
+        position: absolute;
+        width: 200%;
+        height: auto;
+        transition: .4s ease;
+        backface-visibility: hidden;
+        padding: 8px;
+        margin-right: 10px;
+        z-index: -1;
+    }
 
-                .topnav a:hover {
-                    background-color: #d1e6e8;
-                    color: #3c3d58;
-                }
+    .container:hover .image {
+        opacity: .9;
+    }
 
-            .topnav .icon {
-                display: none;
-            }
+    h1 {
+        font-size: 400%;
+    }
 
-        @media screen and (max-width: 300px) {
-            .topnav a:not(:first-child) {
-                display: none;
-            }
+    h2 {
+        font-size: 200%;
+    }
 
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 300px) {
-            .topnav.responsive {
-                position: relative;
-            }
-
-                .topnav.responsive .icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-
-                .topnav.responsive a {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                }
-        }
-
-        /*card*/
-        .card {
-            display: inline-table;
-            position: relative;
-            margin: 50px;
-            float:left;
-        }
-
-
-            .card .img-top {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 99;
-            }
-
-            .card:hover .img-top {
-                display: inherit;
-                box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
-            }
-
-            .card .icon {
-                display: none;
-            }
-
-        h1 {
-            font-size: 420%;
-        }
-		h2 {
-            font-size: 170%;
-        }
-        
-
-    </style>
-</head>
+    p {
+        font-size: 105%;
+    }
+</style>
 <body style="background-color: #3c3d58; ">
 
-    <div class="topnav" id="myTopnav">
-        <a href="../MyTestWebsite/index.html">Home</a>
-        <a href="#games">Games</a>
-        <a href="#contact">Contact</a>
+    <div class="w3-container">
+
+        <div style="text-align: center; padding-top: 200px; padding-bottom: 200px;">
+            <h1>Toby Hooper</h1>
+        </div>
+
+        <!--small -->
+        <div class="w3-row w3-hide-medium w3-hide-large" style="padding-left:40px; padding-right:40px">
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--medium -->
+        <div class="w3-row w3-hide-small w3-hide-large" style="padding-left:80px; padding-right:80px">
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--large -->
+        <div class="w3-row w3-hide-small w3-hide-medium" style="padding-left:210px; padding-right:210px">
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="container">
+                    <a href="ghost">
+                        <img src="white.png" alt="Avatar" class="image2">
+                        <img src="gg.png" alt="Avatar" class="image">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; padding-top: 80px; padding-bottom: 65px;">
+            <h2>Contact</h2>
+            <p>tobyghooper@gmail.com</p>
+        </div>
     </div>
-
-	<div id="home"></div>
-
-    <div style="padding-left:10px; padding-right:10px">
-
-        <h1 style="color: #d1e6e8; text-align: center; padding-top:110px; padding-bottom:90px"> Toby Hooper </h1>
-
-		<div  id="games">
-			<a href="">
-				<div class="card">
-					<img src="GlowingGhostIcon.png" alt="Card Back">
-					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
-				</div>
-			</a>
-
-			<a href="">
-				<div class="card">
-					<img src="GlowingGhostIcon.png" alt="Card Back">
-					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
-				</div>
-			</a>
-
-			<a href="">
-				<div class="card">
-					<img src="GlowingGhostIcon.png" alt="Card Back">
-					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
-				</div>
-			</a>
-
-			<a href="">
-				<div class="card">
-					<img src="GlowingGhostIcon.png" alt="Card Back">
-					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
-				</div>
-			</a>
-		</div>
-
-		<div  id="contact">
-			<h2 style="color: #d1e6e8; text-align: center; padding-top:100px"> Contact </h2>
-			
-			<p style="color: #d1e6e8; text-align: center"> tobyghooper@gmail.com </p>
-		</div>
-
-    </div>
-
 </body>
 </html>
