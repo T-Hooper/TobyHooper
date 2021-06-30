@@ -6,27 +6,28 @@
 
         body {
             margin: 0;
+            padding: 0;
             font-family: Oxanium, Times, serif, Helvetica, sans-serif;
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #a992b1;
-			position: fixed;
+			background-color: rgba(175, 151, 183, 0.82);
+			position: sticky;
 			top: 0;
 			width: 100%;
-			z-index: 100;
+		    z-index: 100;
         }
 
             .topnav a {
                 float: left;
-                display: block;
-                color: #3c3d58;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                font-weight: 400;
+				display: block;
+				color: #3c3d58;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+				font-weight: 400;
             }
 
                 .topnav a:hover {
@@ -69,10 +70,10 @@
 
         /*card*/
         .card {
-            display: inline-block;
+            display: inline-table;
             position: relative;
             margin: 50px;
-
+            float:left;
         }
 
 
@@ -85,11 +86,20 @@
             }
 
             .card:hover .img-top {
-                display: inline;
+                display: inherit;
                 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
             }
 
-        
+            .card .icon {
+                display: none;
+            }
+
+        h1 {
+            font-size: 420%;
+        }
+		h2 {
+            font-size: 170%;
+        }
         
 
     </style>
@@ -97,45 +107,54 @@
 <body style="background-color: #3c3d58; ">
 
     <div class="topnav" id="myTopnav">
-        <a href="#home">Home</a>
+        <a href="../MyTestWebsite/index.html">Home</a>
         <a href="#games">Games</a>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
 
-    <div style="padding-left:100px">
-	<br></br>
-        <h1 style="color: #d1e6e8; ">Toby Hooper</h1>
-        <p style="color: #d1e6e8; ">I make games</p>
+	<div id="home"></div>
+
+    <div style="padding-left:10px; padding-right:10px">
+
+        <h1 style="color: #d1e6e8; text-align: center; padding-top:110px; padding-bottom:90px"> Toby Hooper </h1>
+
+		<div  id="games">
+			<a href="">
+				<div class="card">
+					<img src="GlowingGhostIcon.png" alt="Card Back">
+					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
+				</div>
+			</a>
+
+			<a href="">
+				<div class="card">
+					<img src="GlowingGhostIcon.png" alt="Card Back">
+					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
+				</div>
+			</a>
+
+			<a href="">
+				<div class="card">
+					<img src="GlowingGhostIcon.png" alt="Card Back">
+					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
+				</div>
+			</a>
+
+			<a href="">
+				<div class="card">
+					<img src="GlowingGhostIcon.png" alt="Card Back">
+					<img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
+				</div>
+			</a>
+		</div>
+
+		<div  id="contact">
+			<h2 style="color: #d1e6e8; text-align: center; padding-top:100px"> Contact </h2>
+			
+			<p style="color: #d1e6e8; text-align: center"> tobyghooper@gmail.com </p>
+		</div>
+
     </div>
-
-    <a href="https://sites.google.com/view/toby-hooper/glowing-ghost">
-        <div class="card">
-            <img src="GlowingGhostIcon.png" alt="Card Back">
-            <img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front">
-        </div>
-    </a>
-
-    <a href="https://sites.google.com/view/toby-hooper/glowing-ghost">
-        <div class="card">
-            <img src="GlowingGhostIcon.png" alt="Card Back">
-            <img src="GlowingGhostIconLight.png" class="img-top" alt="Card Front" >
-        </div>
-    </a>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 
 </body>
 </html>
