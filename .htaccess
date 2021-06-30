@@ -1,4 +1,4 @@
-# mod_rewrite starts here
+
 
 RewriteEngine on
 
@@ -10,4 +10,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 
 
-ErrorDocument 404 /not-found-pade.html
+ErrorDocument 404 /page-not-found.html
