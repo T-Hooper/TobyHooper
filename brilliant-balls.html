@@ -53,6 +53,7 @@
         font-size: 105%;
         color: #d1e6e8;
         text-align: center;
+        max-width: 800px;
     }
 
     .center {
@@ -61,8 +62,24 @@
         margin-right: auto;
     }
 
+    .vignette {
+        position: fixed;
+        box-shadow: inset 0 0 6em #33344e;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img {
+        max-width: 100%;
+    }
 </style>
-<body  style="background-color: #3c3d58; ">
+<body style="background-color: #3c3d58; ">
+
+    <div class="vignette">
+    </div>
 
     <div class="w3-container">
 
@@ -79,7 +96,7 @@
 
 
         <p style="padding-top: 50px; padding-bottom: 10px"> Mobile game for android</p>
-        
+
         <a href="https://play.google.com/store/apps/details?id=com.ReasonableGames.FallingBalls" target="_blank" style="color: #f3c81d;">
             <p style="color: #f3c81d; padding-bottom: 50px">view game</p>
         </a>

@@ -54,6 +54,7 @@
         color: #d1e6e8;
         text-align: center;
         margin: 0 auto;
+        max-width: 800px;
     }
 
 
@@ -63,9 +64,24 @@
         margin-right: auto;
     }
 
+    .vignette {
+        position: fixed;
+        box-shadow: inset 0 0 6em #33344e;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
 
+    img {
+        max-width: 100%;
+    }
 </style>
-<body  style="background-color: #3c3d58; ">
+<body style="background-color: #3c3d58; ">
+
+    <div class="vignette">
+    </div>
 
     <div class="w3-container">
 
@@ -79,11 +95,11 @@
 
         <img src="Images/nea.png" alt="image" width="512" class="center" style="padding-bottom: 0px">
 
-        <p style="padding-top: 40px; padding-bottom: 10px; max-width: 1000px;"> I created a route finder for the London Underground for my Computer Science A-Level Non-exam assessment.</p>
+        <p style="padding-top: 40px; padding-bottom: 10px"> I created a route finder for the London Underground for my Computer Science A-Level Non-exam assessment.</p>
 
-        <p style="padding-top: 50px; padding-bottom: 10px; max-width: 1000px;"> The program was made in Java and uses regular expressions, hashing, SQL, a local database, the Transport for London API, and Dijkstra's algorithm for path finding.</p>
+        <p style="padding-top: 50px; padding-bottom: 10px"> The program was made in Java and uses regular expressions, hashing, SQL, a local database, the Transport for London API, and Dijkstra's algorithm for path finding.</p>
 
-        <p style="padding-top: 50px; padding-bottom: 20px; max-width: 1000px;"> The design documents that went with the program are below:</p>
+        <p style="padding-top: 50px; padding-bottom: 20px"> The design documents that went with the program are below:</p>
 
         <div style="text-align: center; left:0; ">
             <a href="Analysis and Design.pdf" target="_blank" style="color: #f3c81d; ">

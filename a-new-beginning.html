@@ -53,6 +53,7 @@
         font-size: 105%;
         color: #d1e6e8;
         text-align: center;
+        max-width: 800px;
     }
 
     .center {
@@ -61,8 +62,24 @@
         margin-right: auto;
     }
 
+    .vignette {
+        position: fixed;
+        box-shadow: inset 0 0 6em #33344e;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img {
+        max-width: 100%;
+    }
 </style>
-<body  style="background-color: #3c3d58; ">
+<body style="background-color: #3c3d58; ">
+
+    <div class="vignette">
+    </div>
 
     <div class="w3-container">
 
@@ -74,7 +91,7 @@
         <div style="padding-top: 0px; padding-bottom: 30px">
             <h1>a new beginning</h1>
         </div>
-        
+
         <img src="Images/a-new-beg-ss.jpg" alt="image" width="500" class="center" style="padding-bottom: 0px">
 
         <p style="padding-top: 50px; padding-bottom: 10px">I made this game within 48 hours for the LD:45 game jam. The theme was 'Start with nothing'</p>

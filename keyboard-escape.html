@@ -20,7 +20,7 @@
         margin: 100px;
         margin-top: 80px;
         line-height: 45px;
-        margin-bottom:30px;
+        margin-bottom: 30px;
     }
 
         .button span {
@@ -53,6 +53,7 @@
         font-size: 105%;
         color: #d1e6e8;
         text-align: center;
+        max-width: 800px;
     }
 
     .center {
@@ -61,8 +62,24 @@
         margin-right: auto;
     }
 
+    .vignette {
+        position: fixed;
+        box-shadow: inset 0 0 6em #33344e;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img {
+        max-width: 100%;
+    }
 </style>
-<body  style="background-color: #3c3d58; ">
+<body style="background-color: #3c3d58; ">
+
+    <div class="vignette">
+    </div>
 
     <div class="w3-container">
 
@@ -80,7 +97,7 @@
         <p style="padding-top: 20px; padding-bottom: 10px">I made this game within 48 hours for the GMTK 2020 game jam. The theme was 'Out of Control'</p>
 
         <p style="padding-top: 0px; padding-bottom: 10px">The results of the jam are shown below. My game placed 138th overall and 18th in originality out of 5,332 entries. </p>
-        
+
         <img src="Images/keyboard-escape-results.png" alt="image" width="350" class="center" style="padding-bottom: 20px">
 
         <a href="https://reasonablegames.itch.io/keyboard-escape" target="_blank" style="color: #f3c81d;">

@@ -53,10 +53,28 @@
         font-size: 105%;
         color: #d1e6e8;
         text-align: center;
+        max-width: 800px;
+    }
+
+    .vignette {
+        position: fixed;
+        box-shadow: inset 0 0 6em #33344e;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img {
+        max-width: 100%;
     }
 
 </style>
 <body style="background-color: #3c3d58; ">
+
+    <div class="vignette">
+    </div>
 
     <div style="padding-top: 170px; padding-bottom: 200px;">
         <h1 style="padding-bottom:60px">404 page not found</h1>
@@ -65,10 +83,10 @@
         </a>
         <div style="padding-top: 110px;">
             <a href="https://www.githubstatus.com/" target="_blank">
-                <p >github server status</p>
+                <p>github server status</p>
             </a>
         </div>
-        
+
     </div>
 
 </body>
