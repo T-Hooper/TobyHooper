@@ -1,97 +1,80 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="style.css" />
 <style>
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+  }
 
-    .container {
-        position: relative;
-        width: 50%;
-        max-width: 600px;
-    }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 200%;
+    height: auto;
+    transition: 0.4s ease;
+    backface-visibility: hidden;
+    padding: 8px;
+    margin-right: 10px;
+  }
 
-    .image {
-        opacity: 1;
-        display: block;
-        width: 200%;
-        height: auto;
-        transition: .4s ease;
-        backface-visibility: hidden;
-        padding: 8px;
-        margin-right: 10px;
-    }
+  .image2 {
+    opacity: 1;
+    position: absolute;
+    width: 200%;
+    height: auto;
+    transition: 0.4s ease;
+    backface-visibility: hidden;
+    padding: 8px;
+    margin-right: 10px;
+    z-index: -1;
+  }
 
-    .image2 {
-        opacity: 1;
-        position: absolute;
-        width: 200%;
-        height: auto;
-        transition: .4s ease;
-        backface-visibility: hidden;
-        padding: 8px;
-        margin-right: 10px;
-        z-index: -1;
-    }
+  .container:hover .image {
+    opacity: 0.9;
+    color: #d3c8e4;
+  }
 
-    .container:hover .image {
-        opacity: .9;
-        color: #d3c8e4
-    }
+  h1 {
+    font-size: 400%;
+    color: #d1e6e8;
+    text-align: center;
+  }
 
-    h1 {
-        font-size: 400%;
-        color: #d1e6e8;
-        text-align: center;
-    }
+  h2 {
+    font-size: 200%;
+    color: #d1e6e8;
+    text-align: center;
+  }
 
-    h2 {
-        font-size: 200%;
-        color: #d1e6e8;
-        text-align: center;
-    }
-
-    p {
-        font-size: 105%;
-        color: #d1e6e8;
-        text-align: center;
-        margin: 0 auto;
-        max-width: 800px;
-    }
-
-    .vignette {
-        position: fixed;
-        box-shadow: inset 0 0 6em #33344e;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
+  p {
+    font-size: 105%;
+    color: #d1e6e8;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
 </style>
-<body style="background-color: #3c3d58; ">
+<body>
+  <div class="vignette"></div>
 
-    <div class="vignette">
+  <div style="padding-top: 170px; padding-bottom: 200px">
+    <h1 style="padding-bottom: 60px">404 page not found</h1>
+    <h2>
+      <a href="/" style="color: #f3c81d"> return to website </a>
+    </h2>
+    <div style="padding-top: 110px">
+      <p>
+        <a
+          href="https://www.githubstatus.com/"
+          target="_blank"
+          style="color: #f3c81d"
+        >
+          github server status
+        </a>
+      </p>
     </div>
-
-    <div style="padding-top: 170px; padding-bottom: 200px;">
-        <h1 style="padding-bottom:60px">404 page not found</h1>
-        <h2>
-            <a href="/" style="color: #f3c81d;">
-                return to website
-            </a>
-        </h2>
-        <div style="padding-top: 110px;">
-            <p>
-                <a href="https://www.githubstatus.com/" target="_blank" style="color: #f3c81d;">
-                    github server status
-                </a>
-            </p>
-        </div>
-
-    </div>
-
+  </div>
 </body>
