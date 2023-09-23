@@ -45,15 +45,25 @@ body {
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 500%;
   color: #d1e6e8;
   text-align: center;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 400%;
   color: #d1e6e8;
   text-align: center;
+}
+
+h3 {
+  font-size: 250%;
+  color: #d1e6e8;
+}
+
+h4 {
+  font-size: 200%;
+  color: #d1e6e8;
 }
 
 p {
@@ -68,8 +78,88 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
-img {
-  max-width: 100%;
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 200%;
+  height: auto;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.container:hover .image {
+  opacity: 0.71;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 200%;
+  height: auto;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.container:hover .image2 {
+  opacity: 0.5;
+}
+
+.image3 {
+  opacity: 1;
+  display: block;
+  width: 200%;
+  height: auto;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.container:hover .image3 {
+  opacity: 0.6;
+}
+
+.imageWhiteSquare {
+  opacity: 1;
+  position: absolute;
+  width: 200%;
+  height: auto;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+  padding: 8px;
+  margin-right: 10px;
+  z-index: -1;
+}
+
+.fa {
+  padding: 9px;
+  font-size: 24px !important;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 16px 7px;
+  border-radius: 100%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background: #3499c8;
 }
